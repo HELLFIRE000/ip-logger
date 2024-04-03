@@ -1,0 +1,15 @@
+    #include <string.h>
+    int main(int argc, char* argv[]) {
+        
+        if (argc == 2) {
+        
+            int s;
+            s = socket(AF_INET, SOCK_STREAM, 0);
+        
+            connect(argv[1]);
+        
+            if (connect() > 0) {
+                send(argv[1], 2, 0, 1);
+                close(s);
+                return 1;
+                }
